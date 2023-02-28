@@ -19,6 +19,57 @@ img {
   width: 100%;
 }
 
+.skill-section {
+  font-size: 1.3em;
+  margin-top: 0em;
+  display: block;
+  position: relative;
+  margin: 100px 0;
+}
+
+.heading {
+  text-align: center;
+  font-size: 1.3em;
+  color: #d4d379;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 100px;
+  letter-spacing: 0.2em;
+  display: block;
+}
+
+.skills-container {
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 100px;
+  color: #d4d379;
+}
+
+.skill-card {
+  position: relative;
+}
+
+.skill-name {
+  font-size: 0.85em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 0em;
+  display: block;
+  color: #d4d379;
+}
+
+.skill-info {
+  color: #dcdcdd;
+  text-align: center;
+  opacity: 0.5;
+  font-size: 0.8em;
+  line-height: 1.8em;
+  font-weight: 500;
+}
+
 footer {
   background: #1e1f2d;
   height: auto;
@@ -224,16 +275,16 @@ section {
 
 @media only screen and (min-width: 500px) {
   .featured,
-.portfolio {
+  .portfolio {
     text-align: left;
   }
   .featured,
-.portfolio-container {
+  .portfolio-container {
     display: grid;
     grid-template-columns: 40% auto;
   }
   .left,
-.portfolio-left {
+  .portfolio-left {
     display: grid;
     place-content: center;
   }
@@ -345,4 +396,5 @@ section {
   .hero .content {
     padding: 9em 20em 6em 20em;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */
