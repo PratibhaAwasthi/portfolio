@@ -32,10 +32,10 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1rem 0 3rem 0;
+  margin: 0px 10px;
 }
 .socials li {
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .socials a {
@@ -58,6 +58,23 @@ footer {
 
   a {
     color: #1c1c2c; //text color for my work and skills
+  }
+  .linking {
+    display: inline-block;
+    color: #000;
+  }
+  .linking::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width 0.3s;
+  }
+
+  .linking:hover::after {
+    width: 100%;
+    //transition: width .3s;
   }
 }
 .kitaabh {
@@ -263,6 +280,9 @@ section {
 }
 
 @media only screen and (min-width: 1050px) {
+  body {
+    background-color: #1e1f2d;
+  }
   .hero {
     height: 90vh;
   }
@@ -305,6 +325,7 @@ section {
     // grid-template-columns: 66% auto;
     background: unset;
     padding: 0;
+    width: 60%;
   }
 
   .content {
@@ -324,11 +345,11 @@ section {
 
 .hero-design {
   display: unset;
-  width: 10px;
-  height: 10px;
+  width: 40% !important;
+  height: 50% !important;
   position: absolute;
   top: 160px;
-  right: 500px;
+  right: 5px;
 
   // display: unset;
   // margin-right: -100px;
@@ -343,6 +364,9 @@ section {
 }
 
 @media only screen and (min-width: 1250px) {
+  body {
+    background-color: #1e1f2d;
+  }
   header {
     padding: 2em 2em 2em 10em;
   }
