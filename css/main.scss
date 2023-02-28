@@ -144,27 +144,9 @@ header {
   color: black;
 }
 
-section {
-  padding: 4em 2em;
-  text-align: center;
-  background: #1a1b26; //darker
-}
-
 .featured {
   position: relative;
 }
-
-// .featured::before {
-//   content: "";
-//   position: absolute;
-//   width: 200px;
-//   height: 200px;
-//   border-radius: 50%;
-//   background: #e5d5fa;
-//   top: 0;
-//   left: 0;
-//   z-index: -1;
-// }
 
 .featured-title {
   color: #d4d379;
@@ -182,9 +164,6 @@ section {
   font-weight: 500;
 }
 
-.skills {
-  background: #1a1b26; //lighter
-}
 .subtitle {
   text-transform: uppercase;
   font-weight: bold;
@@ -192,40 +171,13 @@ section {
   letter-spacing: 0.2em;
   font-size: 0.85em;
 }
-.skill-container ul li {
-  background: #dcdcdd; //background behind the image
-  border-radius: 1em;
-  margin-bottom: 1em;
 
-  .icon-container {
-    height: 100px;
-    display: grid;
-    place-content: center;
-    margin: 0 auto;
-
-    &.one {
-      width: 50px;
-    }
-    &.two {
-      width: 100px;
-    }
-    &.three {
-      width: 60px;
-    }
-  }
-
-  .skill-title {
-    font-weight: bold;
-    color: #d4d379;
-  }
-
-  .featured-desc {
-    color: #dcdcdd;
-    margin-bottom: 3em;
-    font-size: 0.9em;
-    line-height: 1.8em;
-    font-weight: 500;
-  }
+.featured-desc {
+  color: #dcdcdd;
+  margin-bottom: 3em;
+  font-size: 0.9em;
+  line-height: 1.8em;
+  font-weight: 500;
 }
 
 .portfolio {
@@ -234,6 +186,10 @@ section {
 .portfolio-container a img {
   border-radius: 1em;
   margin-bottom: 2em;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media only screen and (min-width: 500px) {
@@ -257,18 +213,6 @@ section {
   .right {
     margin-left: 2em;
     margin-top: 1em;
-  }
-
-  .skills {
-    margin-top: 0em;
-    margin-bottom: 0em; //overlapping effect
-    padding-top: 7em;
-  }
-
-  .skills-container {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-gap: 1em;
   }
 
   .portfolio {
