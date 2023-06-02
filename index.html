@@ -7,30 +7,30 @@
     <meta name="keywords" content="HTML, CSS, Portfolio, Pratibha Awasthi, Pratibha Awasthi Portfolio, Software Engineer, Bay Area">
     <meta name="description" content="Pratibha Awasthi is a grad student & bay area based full stack engineer with MERN tech stack">
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
   <body>
-    <div>
+
+    <!-- navbar -->
+
+  <div>
     <div class="nav-container">
       <header>
         <a class = "linking" href="index.html" class="logo"> &lt;PratibhaAwasthi&sol;&gt; </a> 
-
-        <nav>
-          <ul>
-            <li><a class = "linking" href= #mywork > My work</a></li>
-            <li><a class = "linking" href="mailto: awasthipratibha97@gmail.com"> Hire me</a></li>
-          </ul>
-        </nav>
+         <nav>
+            <ul>
+              <li><a class = "linking" href= #mywork > My work</a></li>
+              <li><a class = "linking" href="mailto: awasthipratibha97@gmail.com"> Hire me</a></li>
+              <li><a class = "linking" href="timeline.html"> Timeline </a></li>
+            </ul>
+         </nav>
       </header>
-      <!-- <div class="social-header">
-        <ul>
-          <li><a href="#"></a><img src = "images/linkedin.png" alt = "Linkedin"> </a> </li> 
-          <li><a href="#"></a><img src = "images/github.png" alt = "Github"> </a> </li> 
-          <li><a href="#"></a><img src = "images/gmail.png" alt = "Gmail"> </a> </li> 
-          <li><a href="#"></a><img src = "images/medium.png" alt = "Medium"> </a> </li> 
-        </ul>
-      </div> -->
-    </div>
+    </div> 
+  </div>
+
+
+  <!-- Main body & Hero design -->
 
     <div class="hero">
       <div class="content">
@@ -38,28 +38,25 @@
 
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script> var typed = new Typed(".auto-type",{
-          strings: ["Hi, I'm Pratibha", "Software Engineer at daytime", " Work for batman during nights🦇 "], typeSpeed: 60, 
-          backSpeed: 0,
-          loop: true
-        })   
+          strings: ["Hi, I'm Pratibha", "Software Engineer at daytime", " Work for batman during nights🦇 "], typeSpeed: 60, backSpeed: 0, loop: true})   
         </script>
 
         <div class="meet">
           <span> 📍 </span>
           <p>San Francisco Bay Area</p>
         </div>
-        <div> <a href="document"target="_blank"><button class = "download-btn">Resume </button></a> 
-        <script src ="main.js"></script>
-        </div>
-        <div class = "hero-design">
+        
+        <div> <a href="document/PratibhaAwasthi.pdf"target="_blank"><button class = "download-btn">Resume </button></a> </div>
+
+       
+
+       <div class = "hero-design">
           <video autoplay loop muted> <source src = "images/animatedPratibha7.mp4">Your browser does not support this animation, please switch to other to view</video>
         </div>
       </div>
-      <!-- <div class = "about">
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus animi sunt qui quos consequatur eos laudantium dolore omnis magni. Laborum libero aliquid, voluptatibus error veritatis dolorum consequatur blanditiis consectetur ut.</p>
-      </div> -->
-      <!-- Will put a yellow or orange ring around myself -->
     </div>
+
+    <!-- Featured Projects -->
     
     <section class="featured projects" id = "mywork">
       <div class="left">
@@ -68,11 +65,9 @@
           <a href="https://github.com/PratibhaAwasthi/Market-Place" target="_blank" class="featured-title"> Market Place</a>
 
           <p class="featured-desc">
-            
             	Developed a Single Page e-commerce application with functionalities like view list of products, product description, product price, add to cart, delete from cart, view products in cart, total price of product cart and checkout to payments.
             	Developed back-end functionalities like login as user, access to user-page, show orders at user-page, login as admin, add & delete product in store, exchange data on listings, orders, payments and reports.  
               Additionally, Built a subsidiary of Market place <a href ="https://github.com/PratibhaAwasthi/Kitaabh" target="_blank" class = "kitaabh"> (Kitaabh) </a>a to target book selling.
-           
           </p>
         </div>
       </div>
@@ -102,6 +97,7 @@
         src="images/API.png"
         alt="Featured Project"
       />
+
     </section>
     <section class="featured projects">
       <div class="left">
@@ -123,48 +119,101 @@
         alt="Featured Project"
       />
     </section>
-   
-    <div class="skill-section">
-      <h1 class="heading">MY SKILLS</h1>
-      <div class="skills-container">
-          <div class="skill-card">
-              <h1 class="skill-name">DESIGN</h1>
-              <ul class="skill-info">Photoshop, Adobe XD, Figma</ul>
+
+    <!-- Cards -->
+
+    <div class="container"  id = "mywork">
+      <main class="grid">
+        <article>
+          <img src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
+          <div class="text">
+            <h3>LinkedIn-to-go</h3>
+            <p>LinkedIn-to-go is a portable device equipped with NFC technology that allows users to easily connect with other LinkedIn users by simply tapping the device. It provides a unique solution to the confusion created by using mobile phones for both personal and professional purposes.</p>
+            <a href="linkedIn-to-go.html" class="btn_readMore">Read More</a>
           </div>
-         
-          <div class="skill-card">
-            <h1 class="skill-name">PROGRAMMING LANGUAGES</h1>
-            <p class="skill-info">JavaScript, Python, CSS, HTML, Java, SQL, C, C++, PHP</p>
-        </div>
-        <div class="skill-card">
-          <h1 class="skill-name">DATABASES & TOOLS</h1>
-          <p class="skill-info">MySQL, MongoDB, Jupyter Notebook</p>
+        </article>
+
+        <article>
+          <img src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Sample photo">
+          <div class="text">
+            <h3>Project 2</h3>
+            <p>Dramatically engage seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.</p>
+            <a href="" class="btn_readMore">Read More</a>
+          </div>
+        </article>
+        <article>
+          <img src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Sample photo">
+          <div class="text">
+            <h3>Project 3</h3>
+            <p>Completely synergize resource taxing relationships via premier niche markets.</p>
+            <a href="" class="btn_readMore">Read more</a>
+          </div>
+        </article>
+        <article>
+          <img src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Sample photo">
+          <div class="text">
+            <h3>Project 4</h3>
+            <p>Imagine jumping into that boat, and just letting it sail wherever the wind takes you...</p>
+            <a href="" class="btn_readMore">Read More</a>
+          </div>
+        </article>
+        <article>
+          <img src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Sample photo">
+          <div class="text">
+            <h3>Project 5</h3>
+            <p>Holisticly predominate extensible testing procedures for reliable supply chains.</p>
+            <a href="" class="btn_readMore">Read More</a>
+          </div>
+        </article>
+        <article>
+          <img src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Sample photo">
+          <div class="text">
+            <h3>Project 6</h3>
+            <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+            <a href="" class="btn_readMore">Read More</a>
+          </div>
+        </article>
+      </main>
+    </div>
+
+    
+
+    
+    <!-- Skill Section -->
+
+  <div class="skill-section">
+    <h1 class="heading">MY SKILLS</h1>
+    <div class="skills-container">
+      <div class="skill-card">
+        <h1 class="skill-name">DESIGN</h1>
+        <ul class="skill-info">Photoshop, Adobe XD, Figma</ul>
+      </div>
+      <div class="skill-card">
+        <h1 class="skill-name">PROGRAMMING LANGUAGES</h1>
+        <p class="skill-info">JavaScript, Python, CSS, HTML, Java, SQL, C, C++, PHP</p>
+      </div>
+      <div class="skill-card">
+        <h1 class="skill-name">DATABASES & TOOLS</h1>
+        <p class="skill-info">MySQL, MongoDB, Jupyter Notebook</p>
       </div>
       <div class="skill-card">
         <h1 class="skill-name">FRAMEWORKS</h1>
         <p class="skill-info">Node.js, React.js</p>
-    </div>
+      </div>
     <div class="skill-card">
       <h1 class="skill-name">APPLICATIONS</h1>
       <p class="skill-info">API design, relational databases, unit testing , integration testing & E2E testing</p>
+    </div>
+    <div class="skill-card">
+      <h1 class="skill-name">LIBRARIES</h1>
+       <p class="skill-info">Scikit-learn, NumPy, Pandas, matplotlib, seaborn, NLTK, PyTorch, Keras, TensorFlow, OpenCV</p>
+    </div>
+
+   </div>
   </div>
-  <div class="skill-card">
-    <h1 class="skill-name">LIBRARIES</h1>
-    <p class="skill-info">Scikit-learn, NumPy, Pandas, matplotlib, seaborn, NLTK, PyTorch, Keras, TensorFlow, OpenCV</p>
-</div>
 
+  <!-- Footer -->
 
-
-
-      </div>
-  </div>
-  
-
-
-
-
-   
-    
     <footer>
       <div class = "footer-content">
         <ul class = "socials">
